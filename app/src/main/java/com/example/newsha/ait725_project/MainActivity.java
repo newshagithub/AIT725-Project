@@ -16,10 +16,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void onButtonClick(View v) {
         if(v.getId() == R.id.loginbutton) {
+
             EditText a = (EditText)findViewById(R.id.TFusername);
             String str = a.getText().toString();
+
             Intent i = new Intent(MainActivity.this, Display.class);
             i.putExtra("Username", str);
+            startActivity(i);
+        }
+
+        if(v.getId() == R.id.Bsignup) {
+
+            Intent i = new Intent(MainActivity.this, SignUp.class);
             startActivity(i);
         }
     }
