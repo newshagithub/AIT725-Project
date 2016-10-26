@@ -8,15 +8,8 @@ import android.app.Activity;
 
 public class Contact{
 
-    int id;
-    String name, email, username, pass;
+    String name, email, uname, pass;
 
-    public void setId(int id) {
-        this.id = id;
-    }
-    public int getId() {
-        return id;
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -34,12 +27,12 @@ public class Contact{
         return email;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setUname(String uname) {
+        this.uname = uname;
     }
 
-    public String getUsername() {
-        return username;
+    public String getUname() {
+        return uname;
     }
 
     public void setPass(String pass) {
