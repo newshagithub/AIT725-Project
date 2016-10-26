@@ -1,6 +1,7 @@
 package com.example.newsha.ait725_project;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -53,6 +54,10 @@ public class SignUp extends Activity {
                 c.setPass(pass1str);
 
                 helper.insertContact(c);
+
+                Intent i = new Intent(SignUp.this, Display.class);
+                i.putExtra("Username", namestr);
+                startActivity(i);
             }
 
         }
